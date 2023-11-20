@@ -1,4 +1,4 @@
-const URL = "https://ecomm000server-7471d1edeae9.herokuapp.com";
+const URL = "https://heroku-app-backend-c139fe7f175d.herokuapp.com";
 
 export default {
   /** mode option deprecated */

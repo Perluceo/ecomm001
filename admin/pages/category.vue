@@ -41,7 +41,7 @@
 export default {
   async asyncData({ $axios }) {
     try {
-      let response = await $axios.$get("https://ecomm000server-7471d1edeae9.herokuapp.com/api/categories");
+      let response = await $axios.$get("https://heroku-app-backend-c139fe7f175d.herokuapp.com/api/categories");
       return {
         categories: response.categories
       };

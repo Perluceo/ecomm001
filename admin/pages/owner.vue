@@ -56,7 +56,7 @@
 export default {
   async asyncData({ $axios }) {
     try {
-      let response = await $axios.$get("https://ecomm000server-7471d1edeae9.herokuapp.com/api/owners");
+      let response = await $axios.$get("https://heroku-app-backend-c139fe7f175d.herokuapp.com/api/owners");
       return {
         owners: response.owners
       };
@@ -84,7 +84,7 @@ export default {
         data.append("about", this.about);
         data.append("photo", this.selectedFile, this.selectedFile.name);
         
-        let response = await this.$axios.$post("https://ecomm000server-7471d1edeae9.herokuapp.com/api/owners",
+        let response = await this.$axios.$post("https://heroku-app-backend-c139fe7f175d.herokuapp.com/api/owners",
           data
         );
         this.owners.push({name:this.name});

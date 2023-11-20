@@ -45,7 +45,7 @@ export default {
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {
 
-    baseURL: 'https://ecomm000server-7471d1edeae9.herokuapp.com/',
+    baseURL: 'https://heroku-app-backend-c139fe7f175d.herokuapp.com/',
   },
 
   // PWA module configuration: https://go.nuxtjs.dev/pwa

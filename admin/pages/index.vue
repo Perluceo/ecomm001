@@ -79,7 +79,7 @@ export default {
   // It is good for SEO because the data will be loaded first
   async asyncData({ $axios }) {
     try {
-      let response = await $axios.$get("https://ecomm000server-7471d1edeae9.herokuapp.com/api/products");
+      let response = await $axios.$get("https://heroku-app-backend-c139fe7f175d.herokuapp.com/api/products");
       console.log(response);
       return {
         products: response.products
@@ -90,7 +90,7 @@ export default {
     async onDeleteProduct(id, index) {
       try {
         let response = await this.$axios.$delete(
-          `https://ecomm000server-7471d1edeae9.herokuapp.com/api/products/${id}`
+          `https://heroku-app-backend-c139fe7f175d.herokuapp.com/api/products/${id}`
         );
         if (response.status) {
           // remove
