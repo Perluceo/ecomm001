@@ -1,0 +1,36 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "publishToHeroku": "cd ../ && git subtree push --prefix server heroku-app-backend master || true"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "algoliasearch": "^4.12.1",
+    "aws-sdk": "^2.1080.0",
+    "axios": "^0.26.0",
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.17.3",
+    "jsonwebtoken": "^8.5.1",
+    "moment": "^2.29.1",
+    "mongoose": "^6.12.0",
+    "mongoose-algolia": "^1.10.1",
+    "mongoose-deep-populate": "^3.2.0",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.4",
+    "multer-s3": "^2.10.0",
+    "stripe": "^8.205.0"
+  },
+  "devDependencies": {
+    "@types/bcrypt-nodejs": "0.0.31"
+  }
+}
