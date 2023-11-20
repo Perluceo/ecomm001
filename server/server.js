@@ -36,7 +36,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
 //deployment
-const PORT = process.env.PORT;    
+const PORT = process.env.PORT || 3000;    
 // app.use(serveStatic(__dirname + "/dist"));
 app.listen(PORT, () => console.log(`Server running on ${PORT}`));
 
