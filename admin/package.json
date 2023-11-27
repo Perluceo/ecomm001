@@ -7,7 +7,7 @@
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
-    "publishToHeroku": "cd ../ && git subtree push --prefix admin app-admin master || true",
+    "publishToHeroku": "cd ../ && git subtree push --prefix admin heroku-app-admin master || true",
     "heroku-postbuild": "npm run build"
   },
   "dependencies": {

@@ -26,7 +26,7 @@
                 <!-- Password -->
                 <div class="a-row a-spacing-base">
                   <label for="ap_customer_name" class="a-form-label">Password</label>
-                  <input
+                  <input v-on:keyup.enter="onLogin"
                     type="password"
                     id="ap_customer_name"
                     class="a-input-text form-control auth-autofocus auth-required-field auth-contact-verification-request-info"

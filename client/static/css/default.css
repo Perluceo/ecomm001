@@ -1170,7 +1170,7 @@
       line-height: 14px;
   }
   .a-breadcrumb ul li {
-      margin-right: .4235em;
+      margin-right: 2em;
       float: left;
   }
   ul.a-horizontal li {
@@ -1187,7 +1187,9 @@
       color: #c45500!important;
   }
   ul li.a-breadcrumb-divider {
+      display: none;
       color: #949494;
+      padding: 2rem;
       position: relative;
       top: -1px;
   }
@@ -2465,7 +2467,7 @@
   }
   .review-body{
       margin-bottom: 10px!important;
-      margin-top: 10px !important
+      margin-top: 10px !important;
       font-size: 13px!important;
       line-height: 19px!important;
   }
