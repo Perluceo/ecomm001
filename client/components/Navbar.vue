@@ -29,11 +29,11 @@
                   <span class="nav-line-1" id="glow-ingress-line1">Deliver to</span>
                   <span v-if="$auth.$state.loggedIn"
                     class="nav-line-2"
-                     id="glow-ingress-line2">{{ $auth.$state.user.address.city }}</span>
-                     <span v-else
+                     id="glow-ingress-line2">{{ "Silicon Valley" || $auth.$state.user.address.city }}</span>
+                     <!--<span v-else
                      class="nav-line-2"
                      id="glow-ingress-line2">Silicon Valley</span>
-                     <!--id="glow-ingress-line2">{{ $auth.$state.user.address.city }}  || Silicon Valley</span>-->
+                     id="glow-ingress-line2">{{ $auth.$state.user.address.city }}  || Silicon Valley</span>-->
                 </div>
               </nuxt-link>
             </div>
