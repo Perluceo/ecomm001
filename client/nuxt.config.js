@@ -9,6 +9,13 @@ export default {
   head: {
     title: process.env.npm_package_name || "",
     script: [{ src: "https://js.stripe.com/v3" }],
+    googleAnalytics: {
+      id: 'process.env.GOOGLE_ANALYTICS_ID'
+    },
+    publicRuntimeConfig: {
+      googleAnalytics: {
+        id: process.env.GOOGLE_ANALYTICS_ID
+      },
     meta: [
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
@@ -50,7 +57,8 @@ export default {
     // Doc: https://axios.nuxtjs.org/usage
     "@nuxtjs/axios",
     "@nuxtjs/pwa",
-    "@nuxtjs/auth"
+    "@nuxtjs/auth",
+    '@nuxtjs/google-analytics'
   ],
   /*
    ** Axios module configuration
