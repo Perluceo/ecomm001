@@ -10,7 +10,10 @@ export default {
     title: process.env.npm_package_name || "",
     script: [{ src: "https://js.stripe.com/v3" }],
     googleAnalytics: {
-      id: 'process.env.GOOGLE_ANALYTICS_ID'
+      id: 'process.env.GOOGLE_ANALYTICS_ID',
+      autoTracking: {
+        screenview: true
+      }
     },
     publicRuntimeConfig: {
       googleAnalytics: {
